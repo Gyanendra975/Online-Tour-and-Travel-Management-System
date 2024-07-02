@@ -1,0 +1,49 @@
+<!-- train_booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Booking</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+
+    .container {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center mb-4" style="color:#b48608;"><b>Cab Booking</b></h2>
+
+  <!-- Train Booking Form -->
+  <form action="cab_details.jsp" method="get">
+    <div class="form-group">
+      <label for="bookingDate" >Booking Date</label>
+      <input type="date" class="form-control" id="bookingDate" name="date" required>
+    </div>
+    <div class="form-group">
+      <label for="fromStation">From</label>
+      <input type="text" class="form-control" id="fromStation" placeholder="Enter source location" name="s_location" required>
+    </div>
+    <div class="form-group">
+      <label for="toStation">To</label>
+      <input type="text" class="form-control" id="toStation" placeholder="Enter destination location" name="d_location"  required>
+    </div>
+    <div class="form-group">
+      <label for="numberOfSeats">Number of passengers</label>
+      <input type="number" class="form-control" id="numberOfSeats" placeholder="Enter number of passengers" name="seats" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

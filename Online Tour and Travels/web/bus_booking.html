@@ -1,0 +1,58 @@
+<!-- bus_booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Booking</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+
+    .container {
+      margin-top: 50px;
+      
+    }
+    
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center mb-4" style="color:#b48608;"><b>Search For Buses</b></h2>
+
+  <!-- Bus Booking Form -->
+  <form action="bus_details.jsp" method="post">
+    <div class="form-group">
+      <label for="bookingDate">Booking Date</label>
+      <input type="date" class="form-control" name ="date" id="bookingDate" required>
+    </div>
+    <div class="form-group">
+      <label for="fromCity">From City</label>
+      <input type="text" class="form-control" name ="FromCity" id="fromCity" placeholder="Enter departure city" required>
+    </div>
+    <div class="form-group">
+      <label for="toCity">To City</label>
+      <input type="text" class="form-control" name ="ToCity" id="toCity" placeholder="Enter arrival city" required>
+    </div>
+    <div class="form-group">
+      <label for="busType">Bus Type</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="busType" id="acBus" value="AC" required>
+        <label class="form-check-label" for="acBus">AC Bus</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="busType" id="nonAcBus" value="Non-AC" required>
+        <label class="form-check-label" for="nonAcBus">Non-AC Bus</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

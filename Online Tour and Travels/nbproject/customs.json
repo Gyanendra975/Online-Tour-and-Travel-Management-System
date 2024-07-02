@@ -1,0 +1,10 @@
+{
+    "elements": {
+        "include": {
+            "attributes": {
+                "href": {}
+            }
+        }
+    },
+    "attributes": {}
+}
